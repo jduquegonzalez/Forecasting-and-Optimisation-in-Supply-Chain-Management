@@ -1,97 +1,60 @@
-# Forecasting the Popularity of "Flowers" Searches on Google: A Comparative Analysis of Prophet, SARIMA, and Holt-Winters Models
-This project is adapted from Marco Peixeiro's book [Time Series Forecasting in Python](https://amzn.eu/d/eU0GuYo).
+# Supply Chain Forecasting and Optimisation
 
 ## Introduction
+This repository is dedicated to professionals and enthusiasts in the field of supply chain management, focusing on forecasting and optimisation. It offers tools, concepts, and methodologies to enhance operational efficiency and data-driven decision-making.
 
-Accurately predicting the popularity of search terms is crucial for retail analysts, as it enables more effective optimisation of marketing strategies. By understanding the trends in keyword searches, analysts can help marketing teams refine their bidding strategies, thus influencing the cost-per-click on advertisements and ultimately improving the overall return on investment (ROI) for marketing campaigns.
+## Contents
 
-Moreover, forecasting search term trends offers deeper insights into consumer behaviour. For instance, if we can predict an increase in searches for "flowers" in the coming month, retail businesses can proactively adjust their strategies. This could involve offering timely discounts, adjusting inventory levels, and ensuring sufficient stock to meet the anticipated demand. Such insights help in aligning supply with demand, improving customer satisfaction, and driving sales growth.
+### Time Series Forecasting
+- **Predicting the Popularity of "Flowers" Searches on Google Using Prophet**: Comparative analysis of SARIMA, Holt-Winters, and Prophet models to forecast search term popularity.
+- **Enhancing Time Series Forecasts with Leading Indicators in Python**: Utilising leading indicators to improve time series forecasts.
 
-In this project, we employ the SARIMA, Holt-Winters, and Prophet models to predict future trends in "flowers" searches on Google. By analysing historical search data sourced from [Google Trends](https://trends.google.com/trends/explore?date=all&geo=GB&q=%2Fm%2F0c9ph5), we aim to create a precise model that provides actionable insights for retail analysts, enabling data-driven decision-making to enhance marketing effectiveness and operational efficiency.
+### Machine Learning Models
+- **Extreme Gradient Boosting Optimisation (single and multiple output)**: Application of XGBoost for single and multiple output predictions.
+- **Forest Model Analysis**: Detailed analysis of random forest models for supply chain forecasting.
+- **Neural Network Regression Model for Sales Forecasting**: Using neural networks to predict sales in the supply chain.
 
-## Project Structure
+### Regression Analysis
+- **Linear Regression Analysis of Automobile Sales Data**: Applying linear regression to forecast automobile sales.
+- **Regression Tree Model - Single and Optimised (1 feature)**: Implementation of regression trees for supply chain data.
 
-- `Forecasting the Popularity of "Flowers" Searches on Google.ipynb`: The main Jupyter notebook containing the analysis and model implementation.
-- `data/`: Directory to store the raw and processed data (not included in the repository for privacy reasons).
-- `figures/`: Directory to store the generated figures and plots.
-- `forecast_results/`: Directory to store the results.
+### Clustering
+- **K-Means Clustering Explained**: Explanation and implementation of K-means clustering to segment data and improve supply chain decisions.
 
-## Dependencies
+### Categorical Features
+- **Leveraging Categorical Features in Supply Chain Forecasting**: Using categorical features to enhance forecasting models.
 
+## Usage
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/jduquegonzalez/Supply-Chain-Forecasting-and-Optimisation.git
+    cd Supply-Chain-Forecasting-and-Optimisation
+    ```
+
+2. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Open the Jupyter Notebooks and run the cells:
+    ```bash
+    jupyter notebook
+    ```
+
+## Requirements
 - Python 3.x
+- Jupyter Notebook
 - pandas
 - numpy
 - matplotlib
 - seaborn
-- statsmodels
-- fbprophet (Prophet)
-- tqdm
 - scikit-learn
+- statsmodels
+- fbprophet
+- xgboost
+- tensorflow
+- tqdm
 
-
-You can install the dependencies using pip:
-
-```sh
-pip install pandas numpy matplotlib seaborn statsmodels fbprophet tqdm scikit-learn
-```
-
-## Usage
-
-1. Clone the repository:
-
-```sh
-git clone https://github.com/jduquegonzalez/Supply-Chain-Efficiency-and-Forecasting.git
-```
-
-2. Navigate to the project directory:
-
-```sh
-cd Supply-Chain-Efficiency-and-Forecasting
-```
-
-3. Open the Jupyter notebook:
-
-```sh
-jupyter notebook "Forecasting the Popularity of "Flowers" Searches on Google.ipynb"
-```
-
-4. Run the notebook cells to reproduce the analysis and results.
-
-## Methodology
-
-### Data Preprocessing
-
-- Importing and cleaning the data.
-- Handling missing values and outliers.
-
-### Model Implementation
-
-- **SARIMA**: Seasonal ARIMA model for capturing the seasonality and trend in the time series.
-- **Holt-Winters**: Exponential Smoothing model to capture level, trend, and seasonal components.
-- **Prophet**: General additive model developed by Facebook, combining trend, seasonality, and holiday effects.
-
-### Model Evaluation
-
-- Evaluating model performance using Mean Absolute Error (MAE) and Mean Squared Error (MSE).
-- Comparing the performance of SARIMA, Holt-Winters, and Prophet models.
-
-### Forecasting
-
-- Generating future forecasts using the best performing model.
-- Plotting the forecast with confidence intervals.
-
-## Conclusion
-
-This project demonstrates the application of time series forecasting techniques to predict the popularity of search terms on Google. By leveraging models like SARIMA, Holt-Winters, and Prophet, we can gain valuable insights into search trends, aiding retail analysts in making informed decisions to optimise marketing strategies and inventory management.
-
-## References
-
-- Marco Peixeiro, [Time Series Forecasting in Python](https://amzn.eu/d/eU0GuYo)
-- [Google Trends](https://trends.google.com/trends/explore?date=all&geo=GB&q=%2Fm%2F0c9ph5)
-- Nicolas Vandeput, [Inventory Optimization: Models and Simulations](https://amzn.eu/d/0VEXlHI)
-- Jordan Ellenberg, [How Not to Be Wrong: The Power of Mathematical Thinking](https://amzn.eu/d/edXzDHa)
-
----
-
-Feel free to contribute to this project by opening issues or submitting pull requests.
-```
+Install the required packages using pip:
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn statsmodels fbprophet xgboost tensorflow tqdm
